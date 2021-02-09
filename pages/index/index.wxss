@@ -1,0 +1,18 @@
+.category{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.cat-commodity {
+  width:150rpx;
+  margin-bottom: 20rpx;
+}
+.cat-img{
+ width: 80rpx; 
+ height:80rpx;
+ margin: 0 auto;
+ display: block;
+}
+.cat-name {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+<van-search placeholder="请输入搜索关键字" model:value="{{value}}" shape="round"></van-search>
+<div id="app">
+  <scroll-view class="scroll1" scroll-y="true" upper-threshold="50" lower-threshold="50" scroll-top="0" scroll-left="0" enhanced="true" show-scrollbar="false" scroll-into-view="" scroll-with-animation="false" enable-back-to-top="true" bindscrolltoupper="" bindscrolltolower="" bindscroll="">
+    <van-sidebar active-key="{{active}}"  bind:change="change">
+      <van-sidebar-item wx:for="{{list}}" wx:key="cat_id" title="{{item.cat_name}}"></van-sidebar-item>
+    </van-sidebar>
+  </scroll-view>
+  <scroll-view class="scroll2" scroll-top="0" scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50" scroll-top="0" scroll-left="0" scroll-into-view="" scroll-with-animation="false" enable-back-to-top="false" bindscrolltoupper="" bindscrolltolower="" bindscroll="">
+    <van-card desc="我是小阿giao" price="9999" wx:for="{{list}}" wx:key="cat_id" title="{{item.cat_name}}" thumb="{{item.cat_src}}"></van-card>
+  </scroll-view>
+</div>

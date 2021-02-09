@@ -1,0 +1,18 @@
+/* pages/category/category.wxss */
+page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scroll1 {
+  width:160rpx;
+}
+#app {
+  display: flex;
+  height: 100%;
+  flex:1;
+}
+.scroll2 {
+  flex:1;
+  height: 100%;
+}

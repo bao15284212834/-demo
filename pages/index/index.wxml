@@ -1,0 +1,32 @@
+<van-search placeholder="请输入搜索关键字" model:value="{{value}}" shape="round"></van-search>
+<swiper class="" indicator-dots="true" indicator-color="rgba(255,255,255,.3)" autoplay="true" current="0" current-item-id="" interval="3000" duration="1000" circular="true" previous-margin="false" next-margin="0px" display-multiple-items="1" skip-hidden-item-layout="false" bindchange="">
+  <swiper-item class="" item-id="">
+    <navigator class="" target="" url="/pages/index/index.wxml" hover-class="navigator-hover" open-type="navigate">
+      <cover-image class="" src="/images/1.png" bindload="" binderror=""></cover-image>
+    </navigator>
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <navigator class="" target="" url="/pages/index/index.wxml" hover-class="navigator-hover" open-type="navigate">
+      <cover-image class="" src="/images/2.png" bindload="" binderror=""></cover-image>
+    </navigator>
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <navigator class="" target="" url="/pages/index/index.wxml" hover-class="navigator-hover" open-type="navigate">
+      <cover-image class="" src="/images/3.png" bindload="" binderror=""></cover-image>
+    </navigator>
+  </swiper-item>
+</swiper>
+<van-notice-bar bindclick="toNotice" mode="link" text="大家好，我是你们的小阿giao.大家好，我是你们的小阿giao.大家好，我是你们的小阿giao.大家好，我是你们的小阿giao" left-icon="volume-o" />
+<!-- 分类 -->
+<view class="category" hover-class="none" hover-stop-propagation="false">
+  <view class="cat-commodity" wx:for="{{list}}" wx:key="cat_id" bindtap="toCategory" data-id="{{index}}">
+      <image class="cat-img" src="{{item.cat_src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="cat-name" hover-class="none" hover-stop-propagation="false">
+        {{item.cat_name}}
+      </view>
+  </view>
+</view>
+<!-- 现时秒杀 -->
+<van-divider contentPosition="center" customStyle="color:  #1989fa; border-color: #1989fa; font-size: 18px;">
+  现时秒杀
+</van-divider>
